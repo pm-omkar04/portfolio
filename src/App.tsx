@@ -204,7 +204,7 @@ function DashboardVisual() {
           <div style={{ fontSize: '0.75rem', color: 'var(--slate)', marginBottom: 2 }}>Portfolio Value</div>
           <div style={{ fontSize: '1.5rem', fontWeight: 700, fontFamily: 'Manrope', color: 'var(--white)' }}>₹24,83,650</div>
           <div style={{ fontSize: '0.8rem', color: 'var(--emerald)', display: 'flex', alignItems: 'center', gap: 4, marginTop: 2 }}>
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2L10 6H2L6 2Z" fill="currentColor"/></svg>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2L10 6H2L6 2Z" fill="currentColor" /></svg>
             +₹1,24,320 (5.27%) today
           </div>
         </div>
@@ -218,7 +218,7 @@ function DashboardVisual() {
       </div>
 
       <div style={{ display: 'flex', alignItems: 'flex-end', gap: 3, height: 56, marginBottom: '1.25rem' }}>
-        {[42,38,55,48,62,45,70,58,65,72,60,68,75,64,80].map((h, i) => (
+        {[42, 38, 55, 48, 62, 45, 70, 58, 65, 72, 60, 68, 75, 64, 80].map((h, i) => (
           <div key={i} style={{
             flex: 1, height: `${h}%`, borderRadius: '3px 3px 0 0',
             background: i >= 11
@@ -331,7 +331,7 @@ function Hero() {
               Product Manager with 1+ year of experience building trading, broking, demat, onboarding,
               market intelligence, and investment-product experiences for HNI users. I bridge product
               strategy, UX, technology, APIs, and QA to turn complex financial workflows into simple
-              digital experiences.
+              digital experiences, with more product explorations and case studies to come.
             </p>
 
             <div style={{ ...item(380), display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2rem' }}>
@@ -354,9 +354,9 @@ function Hero() {
 
             <div style={{ ...item(560), display: 'flex', gap: '2rem', marginTop: '2.5rem', flexWrap: 'wrap' }}>
               {[
-                { val: '6+', label: 'Product Domains' },
+                { val: 'ONE', label: 'Product Domain' },
                 { val: '360 One', label: 'WAM' },
-                { val: '1yr 10mo', label: 'Experience' },
+                { val: '1+ Years', label: 'Experience' },
               ].map(s => (
                 <div key={s.label}>
                   <div style={{ fontSize: '1.5rem', fontWeight: 800, fontFamily: 'Manrope', color: 'var(--white)' }}>{s.val}</div>
@@ -653,7 +653,7 @@ function Experience() {
               </h3>
               <div style={{ fontSize: '0.9rem', color: 'var(--slate)', marginBottom: 4 }}>Product Manager</div>
               <div style={{ fontSize: '0.8125rem', color: 'var(--border-light)', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 100, padding: '0.25rem 0.75rem', display: 'inline-block', marginBottom: '1rem' }}>
-                1 Year 10 Months
+                1+ Years
               </div>
               <p style={{ fontSize: '0.875rem', color: 'var(--slate)', lineHeight: 1.5, margin: 0 }}>
                 Wealth Management · Capital Markets · Broking · Demat · Trading · HNI
@@ -681,7 +681,7 @@ function Experience() {
                   transition: `all 500ms ease-out ${500 + i * 80}ms`,
                 }}>
                   <span style={{ flexShrink: 0, width: 20, height: 20, borderRadius: '50%', background: 'rgba(59,130,246,0.15)', border: '1px solid rgba(59,130,246,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 2 }}>
-                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4L3.5 6L6.5 2" stroke="#3B82F6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4L3.5 6L6.5 2" stroke="#3B82F6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                   </span>
                   <span style={{ fontSize: '0.9375rem', color: 'var(--slate)', lineHeight: 1.55 }}>{r}</span>
                 </li>
@@ -701,37 +701,31 @@ function Experience() {
 
 const PRODUCT_AREAS = [
   {
-    num: '01', title: 'Trading Platform',
-    desc: 'Multi-exchange trading across NSE + BSE — Intraday, Delivery, MTF, AMO, multiple order types, real-time margin and brokerage visibility.',
-    impact: ['31% ↑ trading journey adoption', '18% ↓ order-placement drop-offs'],
-    color: 'var(--blue)',
-  },
-  {
-    num: '02', title: 'Digital KYC & HNI Onboarding',
+    num: '01', title: 'Digital KYC & HNI Onboarding',
     desc: 'Automated onboarding ecosystem: User Journey → Frontend → CDSL → NSE/BSE → OMS → Back Office.',
     impact: ['68% ↓ manual effort', '42% ↑ onboarding completion', '55% ↓ journey time'],
     color: 'var(--emerald)',
   },
   {
-    num: '03', title: 'Market Intelligence',
+    num: '02', title: 'Market Intelligence',
     desc: 'Corporate Actions, IPO, announcements, bulk & block deals, FII/DII movement, stock news & events via CMOTS APIs.',
     impact: ['46% ↑ market-insights engagement'],
     color: 'var(--cyan)',
   },
   {
-    num: '04', title: 'Stock Research',
+    num: '03', title: 'Stock Research',
     desc: 'Yearly & quarterly performance, standalone vs consolidated results, and shareholding patterns.',
     impact: ['38% ↑ stock-research feature usage'],
     color: 'var(--blue-light)',
   },
   {
-    num: '05', title: 'Stock Alerts',
+    num: '04', title: 'Stock Alerts',
     desc: 'Price and percentage-based alerts for NSE/BSE cash-segment stocks with push notifications when conditions are met.',
     impact: ['52% ↑ repeat engagement among alert users'],
     color: 'var(--emerald)',
   },
   {
-    num: '06', title: 'Account Management',
+    num: '05', title: 'Account Management',
     desc: 'Broking & demat profiles, account-opening information, and a digital Account Freeze Journey.',
     impact: ['24% ↓ account-related support queries'],
     color: 'var(--blue)',
@@ -1070,7 +1064,7 @@ function SuccessMetrics() {
             Success Metrics Dashboard
           </h2>
           <p style={{ color: 'var(--slate)', maxWidth: 520, margin: '0 auto', fontSize: '0.9375rem' }}>
-            Placeholder metrics for portfolio presentation — replace with verified project numbers before publishing.
+            Defining what success looks like, measuring the impact, and using insights to drive better product decisions.
           </p>
         </div>
 
@@ -1109,7 +1103,7 @@ const TOOLKIT = [
   {
     category: 'Product Management',
     color: 'var(--blue)',
-    tags: ['Product Strategy', 'Roadmapping', 'PRD / BRD', 'Requirement Gathering', 'User Stories', 'User Story Mapping', 'Sprint Management', 'Benchmarking'],
+    tags: ['Product Strategy', 'Roadmapping', 'PRD / BRD', 'Requirement Gathering', 'User Stories', 'User Story Mapping', 'Sprint Management', 'Benchmarking', 'Prototyping'],
   },
   {
     category: 'UX',
@@ -1119,12 +1113,12 @@ const TOOLKIT = [
   {
     category: 'Capital Markets',
     color: 'var(--emerald)',
-    tags: ['Broking', 'Demat', 'NSE', 'BSE', 'HNI Investing', 'MTF', 'Intraday', 'Delivery', 'Market Data'],
+    tags: ['Broking', 'Demat', 'NSE', 'BSE', 'MTF', 'Intraday', 'Delivery', 'Market Data', 'Class DP/BO', 'Reports', 'KYC'],
   },
   {
-    category: 'APIs & Integration',
+    category: 'API Integration',
     color: 'var(--blue-light)',
-    tags: ['REST APIs', 'Postman', 'CMOTS APIs', 'Omnesys APIs', 'OMS Integration', 'CDSL Integration'],
+    tags: ['REST APIs', 'Postman'],
   },
   {
     category: 'QA',
@@ -1343,11 +1337,11 @@ function Education() {
             const CardWrapper = item.href ? 'a' : 'div';
             const wrapperProps = item.href
               ? {
-                  href: item.href,
-                  target: '_blank',
-                  rel: 'noopener noreferrer',
-                  style: { textDecoration: 'none', color: 'inherit', display: 'block' },
-                }
+                href: item.href,
+                target: '_blank',
+                rel: 'noopener noreferrer',
+                style: { textDecoration: 'none', color: 'inherit', display: 'block' },
+              }
               : {};
 
             return (
@@ -1494,7 +1488,7 @@ function CareerTimeline() {
     { year: '2019', title: 'BE Mechanical Engineering', sub: 'Mumbai University' },
     { year: 'QA', title: 'QA Analyst Certification', sub: 'Q-Spider Institution' },
     { year: 'PM', title: 'Product Management Certification', sub: 'NEXT Leap Institution' },
-    { year: 'Now', title: 'Product Manager', sub: '360 One WAM · 1 Year 10 Months' },
+    { year: 'Now', title: 'Product Manager', sub: '360 One WAM · 1+ Years' },
   ];
 
   return (
